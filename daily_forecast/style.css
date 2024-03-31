@@ -1,0 +1,140 @@
+#weather-container {
+    & h2 {
+        text-align: center;
+    }
+
+    /* border: 1px solid red; */
+}
+/* ================================================= */
+.weather-input {
+    /* width: 550px; */
+    /* width: 400px; */
+    /* max-width: 550px; */
+    max-width: 720px;
+
+    & input {
+        height: 46px;
+        width: 100%;
+        outline: none;
+        font-size: 1.07rem;
+        padding: 0 15px;
+        margin: 10px 0 20px 0;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    & .separator {
+        height: 1px;
+        width: 100%;
+
+        margin: 25px 0;
+
+        background: #bbbbbb;
+
+        /* Use ::before for "or" */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & .separator::before {
+        content: "or";
+        color: #6c757d;
+        font-size: 1.18rem;
+        padding: 0 15px;
+        margin-top: -4px;
+
+        /* Same color with body */
+        background: #e3f2fd;
+    }
+
+    & button {
+        width: 100%;
+        padding: 10px 0;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        color: #fff;
+        background: #5372f0;
+        transition: 0.2s ease;
+    }
+
+    & .search-btn:hover {
+        background: #2c52ed;
+    }
+
+    & .location-btn {
+        background: #6c757d;
+    }
+
+    & .location-btn:hover {
+        background: #5c636a;
+    }
+}
+
+/* ======================================================= */
+.weather__body {
+    /* margin-top: 3rem; */
+    margin-top: 2rem;
+
+    /* border: 1px solid red; */
+
+    /* & > * {
+        border: 1px solid #fff;
+    } */
+
+    /* background: #5372f0; */
+    background: #4f62ac;
+
+    color: #fff;
+
+    & .weather-city {
+        text-align: center;
+    }
+}
+
+/* ======================================================= */
+.weather__body .weather-info {
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* border: 1px solid red; */
+
+    /* & > * {
+        border: 1px solid #fff;
+    } */
+
+    & .card {
+        display: grid;
+        /* grid-gap: 1rem; */
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 0.625rem;
+
+        padding: 0.5rem 0;
+
+        border-bottom: 1px solid rgb(68, 67, 67);
+
+        & > * {
+            text-align: center;
+            /* border: 1px solid red; */
+        }
+
+        & > * > :first-child {
+            font-size: 1.125rem;
+        }
+
+        & > * > :last-child {
+            /* margin-top: 0.5rem; */
+            margin-top: 0.625rem;
+        }
+    }
+
+    & .card span {
+        font-weight: 800;
+    }
+}

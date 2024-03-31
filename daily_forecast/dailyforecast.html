@@ -1,0 +1,90 @@
+<!-- 
+    
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Weather Application</title>
+
+        <link rel="stylesheet" href="../resources/common.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script
+            async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnnIcRYDBUojBGXZhmiMCbsBRG2iStUvM&loading=async&libraries=places&callback=initAutocomplete"
+        ></script>
+    </head>
+    <body>
+        <!-- ================== Navogation Bar ================== -->
+        <nav class="navbar">
+            <p>Weather Forecast</p>
+
+            <ul>
+                <li><a href="../index.html">Now</a></li>
+                <li><a href="dailyforecast.html">Daily</a></li>
+            </ul>
+        </nav>
+
+        <!-- ================= Weather container ================ -->
+        <div id="weather-container">
+            <!-- ////////////////////////////////////////////////////////////////// -->
+            <div class="weather__search">
+                <h2>Weather Daily</h2>
+
+                <div class="weather-input">
+                    <input
+                        type="text"
+                        class="city-input"
+                        id="search_input"
+                        placeholder="Enter a City Name..."
+                    />
+
+                    <button class="search-btn">Search</button>
+
+                    <div class="separator"></div>
+
+                    <button class="location-btn">Use Current Location</button>
+                </div>
+            </div>
+
+            <!-- ////////////////////////////////////////////////////////////////// -->
+            <div class="weather__body">
+                <!-- <h2 class="weather-city">London, UK</h2> -->
+                <h2 class="weather-city"></h2>
+
+                <div class="weather-info">
+                    <!-- <div class="card">
+                        <div class="dateDate">
+                            <p>Monday</p>
+                            <p>_____</p>
+                        </div>
+
+                        <div class="dailyTemp">
+                            <h4>Temp(°F)</h4>
+                            <div><span>__</span>°/__°</div>
+                        </div>
+
+                        <div class="dailyFeelLike">
+                            <h4>Feel Like(°F)</h4>
+                            <div><span>__</span>°/__°</div>
+                        </div>
+
+                        <div class="dailyWind">
+                            <h4>Wind</h4>
+                            <p>__ mph</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================ -->
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDnnIcRYDBUojBGXZhmiMCbsBRG2iStUvM"></script> -->
+
+        <script src="script.js"></script>
+    </body>
+</html>

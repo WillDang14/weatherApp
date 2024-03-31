@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e3f2fd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100svh;
+}
+
+/* ================================================= */
+.navbar {
+    position: absolute;
+
+    width: 100%;
+
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    padding: 0.5rem 1rem;
+
+    & p {
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        text-align: center;
+
+        flex-basis: 80%;
+    }
+
+    & ul {
+        flex-basis: 20%;
+
+        list-style-type: none;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        /* & > * {
+            border: 1px solid red;
+        } */
+
+        /* border: 1px solid blue; */
+    }
+
+    & ul li a {
+        font-size: 1.25rem;
+        text-decoration: none;
+    }
+
+    /* border: 1px solid red; */
+    /* & > * {
+        border: 1px solid red;
+    } */
+}

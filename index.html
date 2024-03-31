@@ -1,0 +1,110 @@
+<!-- 
+    
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Weather Application</title>
+
+        <link rel="stylesheet" href="resources/common.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <script
+            async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnnIcRYDBUojBGXZhmiMCbsBRG2iStUvM&loading=async&libraries=places&callback=initAutocomplete"
+        ></script>
+    </head>
+    <body>
+        <!-- ================== Navogation Bar ================== -->
+        <nav class="navbar">
+            <p>Weather Forecast</p>
+
+            <ul>
+                <li><a href="index.html">Now</a></li>
+                <li><a href="daily_forecast/dailyforecast.html">Daily</a></li>
+            </ul>
+        </nav>
+        <!-- ================= Weather container ================ -->
+        <div id="weather-container">
+            <!-- ////////////////////////////////////////////////////////////////// -->
+            <div class="weather__search">
+                <h2>Current Weather</h2>
+
+                <div class="weather-input">
+                    <input
+                        type="text"
+                        class="city-input"
+                        id="search_input"
+                        placeholder="Enter a City Name..."
+                    />
+
+                    <button class="search-btn">Search</button>
+
+                    <div class="separator"></div>
+
+                    <button class="location-btn">Use Current Location</button>
+                </div>
+            </div>
+
+            <!-- ////////////////////////////////////////////////////////////////// -->
+            <div class="weather__body">
+                <h1 class="weather-city">
+                    <!-- London, UK -->
+                </h1>
+
+                <div class="weather-datetime">
+                    <!-- Monday 14 March 2023 11:14 AM -->
+                </div>
+
+                <div class="current-weather">
+                    <div class="current-weather-left">
+                        <!-- <p class="weather-temperature">18&deg</p> -->
+                        <p class="weather-temperature">__</p>
+                    </div>
+
+                    <div class="current-weather-right">
+                        <!-- <img src="icons/cloud-bolt.svg" data-current-icon /> -->
+                        <img src="" data-current-icon />
+
+                        <p class="weather-forecast">__</p>
+                    </div>
+                </div>
+
+                <div class="weather__info">
+                    <!-- Real Feel -->
+                    <div class="weather-card">
+                        <p>Feel Like</p>
+
+                        <!-- <p class="weather-realfeel"><span>32</span>&deg;</p> -->
+                        <p class="weather-realfeel"><span>__</span>&deg;</p>
+                    </div>
+
+                    <!-- Humidity -->
+                    <div class="weather-card">
+                        <p>Humidity</p>
+
+                        <!-- <p class="weather-humidity"><span>18</span>%</p> -->
+                        <p class="weather-humidity"><span>__</span>%</p>
+                    </div>
+
+                    <!-- Wind Speed -->
+                    <div class="weather-card">
+                        <p>Wind</p>
+
+                        <!-- <p class="weather-wind"><span>18</span>mph</p> -->
+                        <p class="weather-wind"><span>__</span>mph</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================ -->
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDnnIcRYDBUojBGXZhmiMCbsBRG2iStUvM"></script> -->
+
+        <script src="script.js"></script>
+    </body>
+</html>
