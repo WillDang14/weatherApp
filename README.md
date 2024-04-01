@@ -3,7 +3,8 @@
 The app includes 2 navigation button at the top right: Now and Daily
 
 
-To view current weather: 
+To view current weather:
+
   Step 1: click "Now" at the top right of the app ; 
   
   Step 2: enter city name in the search box (for example: Boston) - a suggestion of full location will appear ; 
